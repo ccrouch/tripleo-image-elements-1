@@ -2,7 +2,7 @@
 set -eu
 
 {{^cinder-vol}}
-# ^cinder-vol
+# $cinder-vol doesn't exist
 service cinder-scheduler restart
 service cinder-api restart
 {{cinder-vol}}
